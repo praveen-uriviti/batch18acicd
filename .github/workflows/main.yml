@@ -1,0 +1,23 @@
+name: Deploy HTML File
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  testing:
+    runs-on: uubuntu-latest 
+
+
+    steps:
+      - name: run bash command
+        run: ls -lrth
+
+      - name: more command
+        run: whoami
+
+      - name: one more
+        run: pwd
+      
+        
