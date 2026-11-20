@@ -1,33 +1,39 @@
 name: Deploy HTML File
 
 on:
- pull_request:
-   branches:
-     - main
-     - dev
- push:
+  pull_request:
+    branches:
+      - main
+      - dev
+
+  push:
     branches:
       - main
 
 jobs:
   testing:
-    runs-on: ubuntu-latest 
-
+    runs-on: ubuntu-latest
 
     steps:
-      - name: run bash command
+      - name: Run bash command
         run: ls -lrth
 
-      - name: more command
+      - name: Code checkout
+        uses: actions/checkout@v4
+
+      - name: More command
         run: whoami
 
-      - name: one more
+      - name: One more
         run: pwd
-      - name: test one
+
+      - name: Test one
         run: df -h
-      - name: two more
+
+      - name: Two more
         run: free -h
-      - name: three
+
+      - name: Three
         run: ps -e
         
       
