@@ -19,6 +19,3 @@ jobs:
 
       - name: more command
         run: whoami
-
-      - name: one more
-        run: pwd
