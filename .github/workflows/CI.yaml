@@ -22,5 +22,3 @@ jobs:
 
       - name: one more
         run: pwd
-      - name: test one
-        run: df -h
