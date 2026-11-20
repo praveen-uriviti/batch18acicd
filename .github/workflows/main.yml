@@ -25,10 +25,6 @@ jobs:
         run: pwd
       - name: test one
         run: df -h
-      - name: two more
-        run: free -h
-      - name: three
-        run: ps -e
         
       
         

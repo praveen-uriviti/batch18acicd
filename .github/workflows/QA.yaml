@@ -1,0 +1,26 @@
+name: Deploy HTML File
+
+on:
+ pull_request:
+   branches:
+     - QA
+ push:
+    branches:
+      - QA
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest 
+
+
+    steps:
+      - name: run bash command
+        run: ls -lrth
+
+      - name: more command
+        run: whoami
+
+      - name: one more
+        run: pwd
+      - name: 
+        run: ls
