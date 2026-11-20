@@ -31,10 +31,9 @@ jobs:
         run: df -h
 
       - name: Two more
-        run: free -h
+        run: ls
 
-      - name: Three
-        run: ps -e
+    
         
       
         
